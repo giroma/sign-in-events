@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var modal = document.querySelector('.modal')
   var signIn = document.querySelector('.signin')
   signIn.addEventListener('click', function() {
-    modal.style.display = 'block'
+    modal.style.display = 'inline-block'
   })
 
   var closeButton = document.querySelector('.close')
@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
     modal.style.display = 'none'
   })
 
-
-  modal.addEventListener('click', function () {
+  var popupForm = document.querySelector('.getstarted')
+  popupForm.addEventListener('click', function () {
     modal.style.display = 'none'
   })
 
